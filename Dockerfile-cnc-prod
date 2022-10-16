@@ -1,5 +1,0 @@
-FROM  ccr.ccs.tencentyun.com/yorha-kf-demo/nodejs:latest
-ADD . /
-RUN chmod +x /start.sh
-EXPOSE 8080
-ENTRYPOINT ["bash","-c","/start.sh"]
