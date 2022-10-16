@@ -13,7 +13,7 @@ export default {
     }
   },
   metaInfo: {
-    title: "页面标题",
+    title: "Slug",
     meta: [
       { name: "viewport", content: "width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" },
       { name: "yes", content: "apple-mobile-web-app-capable"}
