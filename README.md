@@ -1,5 +1,6 @@
 # slug
 Yor can find some tools which you offen use every day.
+![Alt text](https://github.com/marklinglon/slug/raw/master/public/screenshots/readme.png)
 
 ## Project setup
 ```
