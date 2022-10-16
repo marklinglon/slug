@@ -1,5 +1,5 @@
 FROM  node:latest
 ADD . /
 RUN chmod +x /start.sh
-EXPOSE 8888
+EXPOSE 8080
 ENTRYPOINT ["bash","-c","/start.sh"]
