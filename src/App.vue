@@ -20,6 +20,12 @@ export default {
     ],
   },
   mounted () {
+    let recaptchaScript = document.createElement('script')
+    recaptchaScript.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2378242604528502')
+    recaptchaScript.setAttribute('crossorigin',"anonymous")
+    recaptchaScript.async = true
+    document.head.appendChild(recaptchaScript)
+
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
     let locale = urlParams.get('locale');
