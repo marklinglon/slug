@@ -114,7 +114,7 @@
 
 <script>
 export default {
-    name: "SlugRoot",
+    name: "SlugSet",
     data() {
        const item = {
         date: '2016-05-02',
@@ -134,7 +134,7 @@ export default {
 </script>
 
 
-<style type="text/css">
+<style type="text/css" scoped>
   .el-header {
     background-color: #409EFF!important;
   }
@@ -149,7 +149,11 @@ export default {
     width: 100%;
   }
 
+  a {
+    font-size: 20px;
+  }
+
   .icon {
-    width: 25px;
+    width: 20px;
   }
 </style>

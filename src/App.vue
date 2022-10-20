@@ -26,26 +26,10 @@ export default {
     recaptchaScript.async = true
     document.head.appendChild(recaptchaScript)
 
-    let queryString = window.location.search;
-    let urlParams = new URLSearchParams(queryString);
-    let locale = urlParams.get('locale');
-    if (this._isMobile() && this.$route.path.match(/privacy/)) {
-      this.$router.replace('/privacy/m_license?locale='+locale)
-    } 
-    if (!this._isMobile() && this.$route.path.match(/privacy/)) {
-      this.$router.replace('/privacy/p_license?locale='+locale)
-    }
-    if (this._isMobile() && this.$route.path.match(/termofservice/)) {
-      this.$router.replace('/termofservice/m_license?locale='+locale)
-    } 
-    if (!this._isMobile() && this.$route.path.match(/termofservice/)) {
-      this.$router.replace('/termofservice/p_license?locale='+locale)
-    }
-    if (this._isMobile() && this.$route.path.match(/3rdsdk/)) {
-      this.$router.replace('/3rdsdk/m_license?locale='+locale)
-    } 
-    if (!this._isMobile() && this.$route.path.match(/3rdsdk/)) {
-      this.$router.replace('/3rdsdk/p_license?locale='+locale)
+    if (this._isMobile()) {
+      this.$router.replace('/m')
+    }else{
+      this.$router.replace('/')
     }
   },
   methods: {
